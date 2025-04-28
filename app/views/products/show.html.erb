@@ -3,6 +3,7 @@
   <div>
     <%= @product.description %>
   </div>
+  <%= image_tag @product.featured_image if @product.featured_image.attached? %>
 <% end %>
 
 <%= link_to "Edit", edit_product_path(@product) if authenticated? %>
