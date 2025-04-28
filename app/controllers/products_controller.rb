@@ -47,6 +47,6 @@ class ProductsController < ApplicationController
 
     # Program will only expect written params
     def product_params
-      params.expect(product: [ :name, :description ])
+      params.expect(product: [ :name, :description, :featured_image ])
     end
 end
